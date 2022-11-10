@@ -36,3 +36,10 @@ steps:
   inputs:
     Contents: '**\target\*.jar'
     TargetFolder: '$(build.artifactstagingdirectory)'
+
+- task: Docker@2
+  inputs:
+    containerRegistry: 'Docker Hub'
+    repository: 'banking-api'
+    command: 'buildAndPush'
+    Dockerfile: '**/Dockerfile'
