@@ -45,6 +45,7 @@ steps:
 - task: Docker@2
   inputs:
     containerRegistry: 'Docker Hub'
-    repository: 'banking-api'
+    repository: 'sumedhwavhal/banking-api'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
+    tags: latest
