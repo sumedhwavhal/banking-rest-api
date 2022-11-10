@@ -24,7 +24,9 @@ steps:
     mavenPomFile: 'pom.xml'
     publishJUnitResults: false
     javaHomeOption: 'JDKVersion'
-    mavenVersionOption: 'Default'
+    mavenVersionOption: 'Path'
+    mavenDirectory: 'C:\Maven\apache-maven-3.8.6\'
+    mavenSetM2Home: false
     mavenAuthenticateFeed: false
     effectivePomSkip: false
     sonarQubeRunAnalysis: false
